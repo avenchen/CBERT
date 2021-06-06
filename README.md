@@ -9,7 +9,13 @@ Instructions for CBERT running and guidelines for installing packages.
 
 Dataset: [https://drive.google.com/drive/folders/10E6nOXhRERhAmRVWla5i99jeUGWmI-Xl?usp=sharing](https://drive.google.com/drive/folders/10E6nOXhRERhAmRVWla5i99jeUGWmI-Xl?usp=sharing)
 
-Download and extract NVD dataset and keep it in the SambaNova directory.
+Download and extract NVD dataset and keep the three files it in the current directory.
+
+In the NVD folder keep the following three files,
+```NVD_CVE.csv``` contains the CVE descriptions and their known CWE associations.
+```NVD_CWE.csv``` contains the CWE ID and descriptions.
+```data``` This is a pickle object that contains, training, testing, validation masks and also the hierarchy of CWEs and some additonal informations.
+
 
 ### Virtual environment if Anaconda is available in the system
 Check your system if Anaconda module is available. If anaconda is not available install packages in the python base. If anaconda is available, then create a virtual enviroment to manage python packages.  
